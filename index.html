@@ -1,44 +1,250 @@
 <!DOCTYPE html>
-<html>
+<html lang="ar" dir="rtl">
 <head>
-    <title>Admin Login</title>
-    <link rel="stylesheet" href="admin.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ZONE STORE</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
 </head>
 
 <body>
 
-<h1>🔐 دخول لوحة الإدارة</h1>
+<!-- القائمة الجانبية -->
 
-<div class="box">
+<div id="sidebar" class="sidebar">
 
-    <input id="username" placeholder="اسم المستخدم">
+<div class="close-btn" onclick="closeMenu()">
+<i class="fa-solid fa-xmark"></i>
+</div>
 
-    <input id="password" type="password" placeholder="كلمة المرور">
+<h2>🎮 ZONE STORE</h2>
 
-    <button onclick="login()">دخول</button>
+<ul>
+
+<li><a href="#"><i class="fa-solid fa-house"></i> الرئيسية</a></li>
+
+<li class="menu-title">🎮 الألعاب</li>
+
+<li><a href="#">PUBG Mobile</a></li>
+
+<li><a href="#">Mobile Legends</a></li>
+
+<li><a href="#">Free Fire</a></li>
+
+<li><a href="#">Call Of Duty Mobile</a></li>
+
+<li><a href="#">FC Mobile</a></li>
+
+<li><a href="#">eFootball</a></li>
+
+<li><a href="#">Clash Of Clans</a></li>
+
+<li><a href="#">Clash Royale</a></li>
+
+<li><a href="#">Brawl Stars</a></li>
+
+<li><a href="#">Honor Of Kings</a></li>
+
+<li><a href="#">Arena Of Valor</a></li>
+
+<li><a href="#">Blood Strike</a></li>
+
+<li><a href="#">Standoff 2</a></li>
+
+<li><a href="#">Genshin Impact</a></li>
+
+<li><a href="#">Wuthering Waves</a></li>
+
+<li><a href="#">Minecraft</a></li>
+
+<li><a href="#">Roblox</a></li>
+
+<li><a href="#">Pokemon GO</a></li>
+
+<li class="menu-title">💎 الخدمات</li>
+
+<li><a href="#">شحن الألعاب</a></li>
+
+<li><a href="#">بيع الحسابات</a></li>
+
+<li><a href="#">بطاقات الهدايا</a></li>
+
+<li><a href="#">العروض</a></li>
+
+<li><a href="#">طلباتي</a></li>
+
+<li><a href="#">المفضلة</a></li>
+
+<li><a href="#">تواصل معنا</a></li>
+
+</ul>
 
 </div>
 
-<script>
-function login(){
+<header>
 
-    let username = document.getElementById("username").value;
-    let password = document.getElementById("password").value;
+<div class="menu" onclick="openMenu()">
+<i class="fa-solid fa-bars"></i>
+</div>
 
-    if(username === "admin" && password === "admin123"){
+<div class="logo">
+🎮 ZONE STORE
+</div>
 
-        localStorage.setItem("adminLogin","true");
+<div class="header-icons">
 
-        window.location.href = "dashboard.html";
+<i class="fa-solid fa-magnifying-glass"></i>
 
-    } else {
+<i class="fa-regular fa-heart"></i>
 
-        alert("اسم المستخدم أو كلمة المرور خطأ");
+<i class="fa-solid fa-cart-shopping"></i>
 
-    }
+<i class="fa-regular fa-user"></i>
 
-}
-</script>
+</div>
+
+</header>
+
+<section class="hero">
+
+<div class="overlay">
+
+<h1>أفضل متجر لشحن الألعاب</h1>
+
+<p>
+شحن سريع - أسعار منافسة - دعم 24/7
+</p>
+
+<a href="#" class="hero-btn">
+ابدأ التسوق
+</a>
+
+</div>
+
+</section>
+
+<section class="services">
+
+<h2>⭐ خدماتنا</h2>
+
+<div class="service-box">
+
+<div class="card">
+<i class="fa-solid fa-bolt"></i>
+
+<h3>تسليم فوري</h3>
+
+<p>تنفيذ جميع الطلبات خلال دقائق.</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-gamepad"></i>
+
+<h3>شحن الألعاب</h3>
+
+<p>جميع ألعاب الموبايل.</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-user-shield"></i>
+
+<h3>بيع الحسابات</h3>
+
+<p>حسابات آمنة ومضمونة.</p>
+
+</div>
+
+</div>
+
+</section>
+<section class="games">
+    <h2>🎮 الألعاب المتوفرة</h2>
+
+    <div class="games-grid">
+
+        <div class="game-card">
+            <img src="images/pubg.jpg" alt="PUBG">
+            <h3>PUBG Mobile</h3>
+            <p>شحن شدات وحسابات.</p>
+            <button>اطلب الآن</button>
+        </div>
+
+        <div class="game-card">
+            <img src="images/mlbb.jpg" alt="Mobile Legends">
+            <h3>Mobile Legends</h3>
+            <p>شحن Diamonds وحسابات.</p>
+            <button>اطلب الآن</button>
+        </div>
+
+        <div class="game-card">
+            <img src="images/freefire.jpg" alt="Free Fire">
+            <h3>Free Fire</h3>
+            <p>شحن جواهر وحسابات.</p>
+            <button>اطلب الآن</button>
+        </div>
+
+        <div class="game-card">
+            <img src="images/efootball.jpg" alt="eFootball">
+            <h3>eFootball</h3>
+            <p>بيع عملات وحسابات.</p>
+            <button>اطلب الآن</button>
+        </div>
+
+    </div>
+</section> 
+    <section class="contact">
+
+    <h2>📞 تواصل معنا</h2>
+
+    <div class="contact-box">
+
+        <a href="https://wa.me/201000000000" target="_blank" class="btn whatsapp">
+            💬 واتساب
+        </a>
+
+        <a href="https://t.me/USERNAME" target="_blank" class="btn telegram">
+            ✈️ تيليجرام
+        </a>
+
+        <a href="https://facebook.com/USERNAME" target="_blank" class="btn facebook">
+            📘 فيسبوك
+        </a>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <p>© 2026 ZONE STORE - جميع الحقوق محفوظة.</p>
+
+</footer>
+
+<script type="module" src="firebase.js"></script>
+<script type="module" src="script.js"></script>
 
 </body>
 </html>
+<section class="search">
+
+    <input
+        type="text"
+        id="search"
+        placeholder="🔍 ابحث عن لعبة..."
+    >
+
+</section>

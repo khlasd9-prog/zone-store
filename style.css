@@ -1,0 +1,216 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Tahoma,sans-serif;
+}
+
+body{
+    background:#111;
+    color:#fff;
+    direction:rtl;
+}
+
+header{
+    background:#1b1b1b;
+    padding:20px;
+    text-align:center;
+    border-bottom:3px solid #00c853;
+}
+
+header h1{
+    color:#00e676;
+    margin-bottom:10px;
+}
+
+nav a{
+    color:#fff;
+    text-decoration:none;
+    margin:0 12px;
+    font-size:18px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#00e676;
+}
+
+.banner{
+    text-align:center;
+    padding:60px 20px;
+    background:linear-gradient(135deg,#00c853,#00695c);
+}
+
+.banner h2{
+    font-size:40px;
+    margin-bottom:15px;
+}
+
+.banner p{
+    font-size:20px;
+}
+
+.services{
+    padding:50px 20px;
+}
+
+.services h2{
+    text-align:center;
+    margin-bottom:30px;
+    color:#00e676;
+}
+
+.service-box{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.service-box div{
+    background:#1f1f1f;
+    width:280px;
+    padding:20px;
+    border-radius:12px;
+    text-align:center;
+    transition:.3s;
+}
+
+.service-box div:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 15px #00e676;
+}
+.games{
+    padding:50px 20px;
+}
+
+.games h2{
+    text-align:center;
+    color:#00e676;
+    margin-bottom:30px;
+}
+
+.games-grid{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+}
+
+.game-card{
+    background:#1f1f1f;
+    width:260px;
+    border-radius:15px;
+    overflow:hidden;
+    text-align:center;
+    transition:.3s;
+}
+
+.game-card:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 20px #00e676;
+}
+
+.game-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.game-card h3{
+    margin:15px 0 10px;
+}
+
+.game-card p{
+    color:#ccc;
+    margin-bottom:15px;
+}
+
+.game-card button{
+    background:#00c853;
+    color:#fff;
+    border:none;
+    padding:12px 20px;
+    margin-bottom:20px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.game-card button:hover{
+    background:#00e676;
+}
+.contact{
+    padding:50px 20px;
+    text-align:center;
+}
+
+.contact h2{
+    color:#00e676;
+    margin-bottom:25px;
+}
+
+.contact-box{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 24px;
+    border-radius:10px;
+    text-decoration:none;
+    color:#fff;
+    font-size:18px;
+    transition:.3s;
+}
+
+.whatsapp{
+    background:#25D366;
+}
+
+.telegram{
+    background:#229ED9;
+}
+
+.facebook{
+    background:#1877F2;
+}
+
+.btn:hover{
+    transform:scale(1.08);
+}
+
+footer{
+    background:#1b1b1b;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+    border-top:3px solid #00c853;
+}
+
+@media(max-width:768px){
+
+    .banner h2{
+        font-size:30px;
+    }
+
+    .banner p{
+        font-size:18px;
+    }
+
+    nav a{
+        display:block;
+        margin:10px 0;
+    }
+
+    .game-card{
+        width:90%;
+    }
+
+    .service-box div{
+        width:90%;
+    }
+}
